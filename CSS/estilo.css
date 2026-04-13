@@ -111,3 +111,80 @@ body {
 .btn-secondary:hover {
     background-color: #eef2ff;
 }
+
+/* HEADER PLANES */
+.planes-header {
+    margin-top: 90px; /* espacio por navbar fijo */
+    width: 95%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    min-height: 420px;
+}
+
+/* Fondo degradado */
+.planes-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0b3c88, #1cc5c9);
+    z-index: 1;
+}
+
+/* Contenido */
+.planes-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 120px 20px 140px;
+    color: #ffffff;
+}
+
+/* Título */
+.planes-content h1 {
+    font-size: 96px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+/* Texto */
+.planes-content p {
+    margin-top: 20px;
+    font-size: 22px;
+    opacity: 0.95;
+}
+
+.servicios {
+    width: 95%;
+    max-width: 1400px;
+    margin: 60px auto;
+    min-height: 420px;
+    border-radius: 25px;
+    padding: 120px 20px 140px;
+    background: linear-gradient(180deg, #1e4fa3, #2d6cdf);
+    text-align: center;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenido */
+.servicios-content h2 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.servicios-content p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+    font-family: Arial, sans-serif;
+}
