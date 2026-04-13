@@ -250,3 +250,78 @@ body {
         transform: translate(4%, -10%);
     }
 }
+
+.planes-grid {
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.plan-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Destacado (el del medio) */
+.plan-card.destacado {
+    transform: scale(1.05);
+    border: 3px solid #1cc5c9;
+}
+
+/* Título */
+.plan-card h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* Precio */
+.precio {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e4fa3;
+}
+
+.precio span {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Lista */
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.plan-card ul li {
+    margin: 8px 0;
+}
+
+/* Botón */
+.plan-card button {
+    background: linear-gradient(135deg, #0b3c88, #1cc5c9);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.plan-card button:hover {
+    opacity: 0.85;
+}
